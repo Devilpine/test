@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/df8o4g5-b8966b69-46d9-4d00-934c-8a9fa5567c46.gif">
+</head>
+<body>
+
+    <div class="hero">
+        <div class="navbar">
+            <a href="https://en.wikipedia.org/wiki/Phum_Viphurit" target="_blank"><img src="images/df8o4g5-b8966b69-46d9-4d00-934c-8a9fa5567c46.gif"  class="logo">
+            </a>
+            <ul>
+                <li><a href="https://www.instagram.com/phumviphurit/?hl=en" target="_blank">Instagram</a></li>
+                <li><a href="https://www.youtube.com/@Ratsrecords" target="_blank">YouTube</a></li>
+                <li><a href="https://www.facebook.com/PhumViphurit/" target="_blank">Facebook</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="left">
+                <h1>Phum <br>Viphurit</h1>
+            </div>
+            <div class="right">
+                <p>Click To Play</p>
+                <img src="images/play.png" id="icon">
+            </div>
+        </div>
+    </div>
+        <audio id="kanta">
+        <source src="images/Walker.mp3" type="audio/mp3">
+        </audio>
+    
+    <script>
+        var kanta = document.getElementById("kanta");
+        var icon = document.getElementById("icon");
+        
+        icon.onclick = function(){
+            if(kanta.paused){
+                kanta.play();
+                icon.src = "images/pause.png";
+            }else{
+                kanta.pause();
+                icon.src = "images/play.png";
+            }
+        }
+
+    </script>
+
+
+</body>
+</html>
